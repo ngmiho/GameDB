@@ -1,0 +1,22 @@
+﻿<Window x:Class="GameDB.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameDB.UI"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="690" Width="1080" Loaded="Window_Loaded_1" Closed="Window_Closed">
+    <Grid>
+        
+        <Button x:Name="BtnCreate" Content="Create" HorizontalAlignment="Left" Margin="833,339,0,0" VerticalAlignment="Top" Width="199" Height="50" Click="BtnCreate_Click"/>
+        <Button x:Name="BtnUpdate" Content="Update" HorizontalAlignment="Left" Margin="833,433,0,0" VerticalAlignment="Top" Width="199" Height="48" Click="BtnUpdate_Click"/>
+        <Button x:Name="BtnLogOut" Content="Logout" HorizontalAlignment="Left" Margin="833,528,0,0" VerticalAlignment="Top" Width="199" Height="48"/>
+        <Button x:Name="BtnSearching" Content="Searching" HorizontalAlignment="Left" Margin="55,234,0,0" VerticalAlignment="Top" Width="199" Height="48" Click="BtnSearching_Click"/>
+        <TextBox x:Name="TxtSearching" HorizontalAlignment="Left" Margin="282,235,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="518" Height="47"/>
+        <Label Content="AIR CONDITION MANAGEMENT" HorizontalAlignment="Left" Margin="55,97,0,0" VerticalAlignment="Top" Style="{StaticResource HeaderLabelStyle}"/>
+        <Rectangle HorizontalAlignment="Left" Height="569" Margin="33,55,0,0" Stroke="Black" VerticalAlignment="Top" Width="1017"/>
+        <DataGrid x:Name="MainDataGrid" AutoGenerateColumns="True" Margin="55,337,280,79"/>
+
+    </Grid>
+</Window>
